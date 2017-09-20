@@ -1,0 +1,90 @@
+.portfolio
+	height: 1160px
+	background: url(../img/general/portfolio-bg.jpg) 0 0 no-repeat
+	margin-top -20px
+
+	&:after
+		content ''
+		absolute($left:0, $right:0, $top: -20px)
+		display block
+		size(100%, 20px)
+		background url(../img/general/wave-portfolio-top.png)0 0 no-repeat
+
+	&:before
+		content ''
+		absolute($left:0, $right:0, $bottom: -20px)
+		display block
+		size(100%, 20px)
+		background url(../img/general/wave-portfolio-bottom.png)0 -1px no-repeat
+		z-index 1
+
+.portfolio-item-wrap
+	width 100%
+	max-width 975px
+	margin 0 auto
+
+.portfolio-item-center
+	position relative
+	display flex
+	flex-wrap wrap
+
+.portfolio-item-line
+	display flex
+	flex-wrap wrap
+
+.portfolio-item
+	position relative
+	size(292px, 230px)
+	background-size cover
+	cursor pointer
+
+	&.portfolio-item--width
+		width 390px
+
+	&.portfolio-item--height
+		height 460px
+		absolute($top: 0, $right: 1px)
+
+
+	&:hover
+		.portfolio-item-descr
+			opacity 1
+
+
+
+.portfolio-item-search
+	absolute($right:10px, $bottom:12px)
+	size(25px, 25px)
+	background greenColor
+	border 1px solid #fff
+	border-radius 50%
+	z-index 1
+		
+	&:after
+		content ''
+		display block
+		size(13px)
+		absolute($top:50%, $left: 50%)
+		transform translate(-50%, -50%)
+		background url(../img/general/search.svg)0 0 no-repeat
+		background-size 100%
+
+
+.portfolio-item-descr
+	absolute($bottom:0, $left:0, $right: 0)
+	background greenColor
+	color #fff
+	text-align right
+	padding 15px 50px 15px 10px
+	opacity 0
+	transition all linear .3s
+
+.portfolio-instagramm
+	text-align center
+	color greenColor
+	margin-top 20px
+	font-size 28px
+
+.instagram-text--big
+	text-transform  uppercase
+	font-family mainFont

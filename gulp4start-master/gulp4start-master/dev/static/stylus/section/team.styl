@@ -1,0 +1,121 @@
+.team
+  background url('../img/general/team-bg.jpg') 75% 0 no-repeat
+  padding 0
+
+  &:after
+      content ''
+      display block
+      absolute($left:0, $right:0, $top: -19px)
+      height 21px
+      background url('../img/general/wave-team-top.png') 0 0 no-repeat
+      z-index 1
+
+  &:before
+      content ''
+      display block
+      absolute($left:0, $right:0, $bottom: -19px)
+      height 21px
+      background url('../img/general/wave-top1.png') 0 0 no-repeat
+      z-index 1
+
+.team-content
+  position relative
+  padding 50px 0
+  background url('../img/general/team-line.png') 0 0 no-repeat
+  height 1140px
+  color greenColor
+
+
+.team-photo
+  size(165px)
+  border 2px solid greenColor
+  border-radius 50%
+  overflow hidden
+  margin 0 auto 10px
+
+  &.team-photo--founder
+    absolute($left: 0)
+    size(260px)
+    background url(../img/content/photo/team-founder.jpg) -10px -20px no-repeat
+
+.team-founder
+  absolute($left: 14%, $top: 10%)
+  padding-left 290px
+
+.team-founder__info
+  width 100%
+  max-width 460px
+
+  span
+    display block
+    margin-bottom 10px
+
+    &:last-of-type
+      margin-bottom 20px
+
+.team-founder__text
+  font-family italicFont
+
+
+.team-founder__title
+  font-family boldFont
+  font-size 24px
+
+.team-item
+  text-align center
+  width 100%
+  max-width 271px
+  margin-right -15px
+
+  &.team-item--col
+    margin-top 40px
+
+
+.team-title
+  font-family boldFont
+  display block
+  margin-bottom 5px
+
+.team-text__work
+  display block
+  line-height 1.2
+  margin-bottom 3px
+
+.team-small-photo__container
+  size(100%, 585px)
+  display flex
+  flex-flow row wrap
+  absolute($bottom: 11%, $left: 1%)
+
+
+.team-item--leader-organization
+  .team-photo
+    background url('../img/content/photo/team-leader.jpg') 0 -5px no-repeat
+
+.team-item--coordinator
+  .team-photo
+    background url('../img/content/photo/coordinator.jpg') 0 0px no-repeat
+
+.team-item--banket
+  .team-photo
+    background url('../img/content/photo/banket.jpg') 0 0 no-repeat
+
+.team-item--photograph
+  .team-photo
+    background url('../img/content/photo/photograph.jpg') 0 -10px no-repeat
+
+.team-item--decorator
+  .team-photo
+    background url('../img/content/photo/decorator.jpg') 0 -10px no-repeat
+
+.team-item--producer
+    .team-photo
+      background url('../img/content/photo/producer.jpg') 0 -20px no-repeat
+
+.team-item--leader-child
+  .team-photo
+    background url('../img/content/photo/leader-child.jpg') 0 0 no-repeat
+
+.team-item--corporate
+  .team-photo
+    background url('../img/content/photo/corporate.jpg') 0 0 no-repeat

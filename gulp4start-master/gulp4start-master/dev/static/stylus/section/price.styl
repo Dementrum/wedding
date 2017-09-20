@@ -1,0 +1,105 @@
+.price
+  background url('../img/general/price-bg.jpg') 0 0 no-repeat
+	.price-item__wrap
+		display flex
+		justify-content space-around
+		flex-wrap wrap
+		
+.price-item
+	display flex
+	flex-direction column
+	justify-content space-between
+	width 30%
+	padding 20px 20px 30px
+	border-radius 15px
+	text-align center
+	color greenColor
+	line-height 1.2
+
+
+.price-item--mod1
+	background url('../img/general/price/level.jpg') 0 0 no-repeat
+	background-size cover
+
+.price-item--mod2
+	background url('../img/general/price/level2.jpg') 0 0 no-repeat
+	background-size cover
+
+.price-item--mod3
+	background url('../img/general/price/level3.jpg') 0 0 no-repeat
+	background-size cover
+
+.price-title
+	position relative
+	display block
+	font-size 24px
+	font-family boldFont
+	color greenColor
+	text-transform uppercase
+
+	&:after
+		content ''
+		display block
+		background  greenColor
+		margin 20px auto
+		width 260px
+		height 1px
+
+.price-descr
+	margin-bottom 10px
+
+.price-list
+	margin-bottom 20px
+
+	li
+		margin-bottom 5px
+
+.price-number
+	position relative
+	size(260px, 60px)
+	border-top 1px solid grLightColor
+	border-bottom 1px solid grLightColor
+	margin 0 auto
+	color #fff
+	background radial-gradient(circle, #56bfb1, greenColor)
+
+
+.price-number
+	span
+		font-size 42px
+
+.triangle
+	&:before
+		position  absolute
+		content  ""
+		left 0
+		border-top 30px solid transparent
+		border-left 10px solid #fff
+		border-bottom 30px solid transparent
+
+	&:after
+		position  absolute
+		content  ""
+		right 0
+		border-top 30px solid transparent
+		border-right 10px solid #fff
+		border-bottom 30px solid transparent
+
+.price-order
+	color #fff
+	margin-top 35px
+	text-align center
+
+	p
+		font-size 28px
+		margin-bottom 30px
+
+		a
+			font-family  boldFont
+			color #fff
+
+
+
+
+
+

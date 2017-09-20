@@ -1,0 +1,88 @@
+.sandwich {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 15px;
+  background: greenColor;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.sandwich.active .sandwich--line_top {
+  top: 21px;
+  left: 18px;
+  width: 36px;
+  transform: rotate(45deg);
+}
+.sandwich.active .sandwich--line_middle {
+  top: 22px;
+  opacity: 0;
+}
+.sandwich.active .sandwich--line_bottom {
+  top: 21px;
+  left: 18px;
+  width: 36px;
+  transform: rotate(-225deg);
+}
+.sandwich-line {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -12.5px;
+  background: #fff;
+  transition: all 400ms ease-in-out;
+}
+.sandwich--line_top {
+  top: 14px;
+}
+.sandwich--line_middle {
+  top: 22px;
+  opacity: 1;
+}
+.sandwich--line_bottom {
+  top: 30px;
+}
+.g-btn {
+  display: inline-block;
+  height: 50px;
+  line-height: 48px;
+  border: 1.3px solid #fff;
+  border-radius: 50px;
+  padding: 0 20px;
+  color: #fff;
+  background: greenColor;
+  transition: all linear 0.4s;
+  cursor: pointer;
+}
+.g-btn:hover {
+  background-color: #fff;
+  color: greenColor;
+}
+.g-btn.g-btn--small {
+  height: 30px;
+  line-height: 28px;
+}
+.g-section-title {
+  margin-bottom: 30px;
+  font-size: 42px;
+  text-align: center;
+  font-family: titleFont;
+  color: greenColor;
+}
+.g-section-title.g-section-title--white {
+  color: #fff;
+}
+.instagram-text {
+  font-size: 24px;
+  font-family: boldFont;
+  color: greenColor;
+  position: relative;
+  display: inline-block;
+}
+.instagram-text:before {
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  margin: -7px 15px 0 0;
+  background: url("../img/general/instagram.png") 0 0 no-repeat;
+}

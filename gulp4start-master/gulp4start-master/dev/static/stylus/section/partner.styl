@@ -1,0 +1,73 @@
+.partner
+  background url('../img/general/partner-bg.jpg') 0 0 no-repeat
+  background-size cover
+
+  &:before
+    content ''
+    absolute($left:0, $right:0, $bottom: -1px)
+    height 21px
+    background url('../img/general/wave-team-bottom.png') 0 0 no-repeat
+    z-index 1
+
+.partner-content
+  width 100%
+  max-width 960px
+  margin 0 auto
+
+.partner-photo__wrap
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+
+.partner-foto
+  size(260px, 220px)
+  margin-bottom 50px
+
+  &.partner-foto.partner-foto--width
+    width 360px
+
+.partner-advantages__item
+  position relative
+  width 100%
+  margin 0 20px 40px
+  padding-left 55px
+
+  &.partner-advantages__item--1
+    max-width 240px
+
+  &.partner-advantages__item--2
+    max-width 490px
+
+  &.partner-advantages__item--3
+    max-width 370px
+
+  &.partner-advantages__item--4
+    max-width 270px
+
+.partner-advantages__line
+  display flex
+  color greenColor
+  justify-content  center
+  flex-wrap wrap
+
+.partner-advantages__number
+  display block
+  padding-top 3px
+  absolute($left:0)
+  background greenColor
+  size(45px)
+  border-radius 50%
+  color #fff
+  font-size 30px
+  font-family boldFont
+  text-align center
+
+.partner-more
+  text-align center
+  color greenColor
+  font-size 22px
+
+  span
+    display block
+    padding-bottom 20px
+

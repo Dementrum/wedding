@@ -1,0 +1,24 @@
+.banner {
+  position: relative;
+  padding: 70px;
+  background: url("../img/content/bg.jpg") center 0 no-repeat;
+  background-size: cover;
+}
+.banner:after {
+  content: '';
+  display: block;
+  background: url("../img/general/wave-bottom.png");
+}
+.banner .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 550px;
+}
+.banner-text {
+  text-align: center;
+  font-size: 30px;
+  font-family: titleFont;
+  line-height: 1.4;
+  color: #fff;
+}

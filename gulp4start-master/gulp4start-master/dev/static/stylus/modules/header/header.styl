@@ -1,0 +1,53 @@
+header
+	height 70px
+	background linear-gradient(90deg, greenColor 25%, grLightColor 50%, greenColor 75%) no-repeat
+	color #fff	
+	
+	.container
+		display flex
+		justify-content space-between
+		align-items center
+		padding 15px 0
+		height 70px
+
+.header-logo
+	relative($top:35px)
+	z-index 1
+
+.header-about
+	span
+		display block
+		font-size 16px
+
+.header-nav_title
+	a
+		color #fff
+
+.header-company__name
+	font-family boldFont
+	text-transform uppercase
+	margin-bottom 5px
+	font-size: 16px;
+	
+.header-phone
+	position relative
+	padding-left 35px
+	
+	
+	&:before
+		content ""
+		absolute($top:50%, $left:0)
+		margin-top -12px
+		display block
+		size(25px)
+		background url('../img/general/phone.svg') 0 0 no-repeat
+		background-size 100%
+		
+	
+	a
+		color #fff
+		display block
+		font-size 20px
+		
+		&:first-child
+			margin-bottom 5px

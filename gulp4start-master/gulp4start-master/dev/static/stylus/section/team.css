@@ -1,0 +1,54 @@
+.team {
+  background: url("../img/general/team-bg.jpg") 75% 0 no-repeat;
+  padding: 0;
+}
+.team:after {
+  content: '';
+  display: block;
+  height: 21px;
+  background: url("../img/general/wave-team-top.png") 0 0 no-repeat;
+  z-index: 1;
+}
+.team:before {
+  content: '';
+  display: block;
+  height: 21px;
+  background: url("../img/general/wave-top1.png") 0 0 no-repeat;
+  z-index: 1;
+}
+.team-content {
+  position: relative;
+  padding: 70px 0;
+  background: url("../img/general/team-line.png") 0 0 no-repeat;
+  height: 1140px;
+  color: greenColor;
+}
+.team-photo {
+  border: 2px solid greenColor;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.team-photo.team-photo--founder {
+  background: url("../img/content/photo/team-founder.jpg") -10px -20px no-repeat;
+}
+.team-founder {
+  padding-left: 290px;
+}
+.team-founder__info {
+  width: 100%;
+  max-width: 460px;
+}
+.team-founder__info div {
+  display: block;
+  margin-bottom: 10px;
+}
+.team-founder__info div:last-of-type {
+  margin-bottom: 20px;
+}
+.team-founder__text {
+  font-family: italicFont;
+}
+.team-founder__title {
+  font-family: boldFont;
+  font-size: 24px;
+}

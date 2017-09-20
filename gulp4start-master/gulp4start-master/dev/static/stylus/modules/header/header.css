@@ -1,0 +1,46 @@
+header {
+  height: 70px;
+  background: linear-gradient(90deg, greenColor 25%, grLightColor 50%, greenColor 75%) no-repeat;
+  color: #fff;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  height: 70px;
+}
+.header-logo {
+  z-index: 1;
+}
+.header-about span {
+  display: block;
+  font-size: 16px;
+}
+.header-nav_title a {
+  color: #fff;
+}
+.header-company__name {
+  font-family: boldFont;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.header-phone {
+  position: relative;
+  padding-left: 35px;
+}
+.header-phone:before {
+  content: "";
+  margin-top: -12px;
+  display: block;
+  background: url("../img/general/phone.svg") 0 0 no-repeat;
+  background-size: 100%;
+}
+.header-phone a {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+}
+.header-phone a:first-child {
+  margin-bottom: 5px;
+}

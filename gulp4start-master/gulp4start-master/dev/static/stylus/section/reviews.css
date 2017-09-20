@@ -1,0 +1,11 @@
+.reviews {
+  height: 880px;
+  background: url("../img/general/previews-bg.jpg") 0 0 no-repeat;
+}
+.reviews:before {
+  content: '';
+  display: block;
+  height: 21px;
+  background: url("../img/general/wave-team-bottom.png") 0 0 no-repeat;
+  z-index: 1;
+}

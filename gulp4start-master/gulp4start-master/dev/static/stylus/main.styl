@@ -1,0 +1,110 @@
+@import '../../static/stylus/fonts.styl'
+@import '../../static/stylus/vars.styl'
+@import '../../static/stylus/libs.styl'
+@import '../../static/stylus/utils/mixins.styl'
+
+
+html
+	line-height 1.3
+	font-size 18px
+
+
+body
+	font-family mainFont
+
+
+h1,h2,h3,h4,h5,h6
+	margin 0
+
+
+ul,li
+	margin 0
+	padding 0
+	list-style-type none
+
+p
+	margin 0
+
+a
+	text-decoration none
+	color black
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align middle
+
+
+textarea
+	resize none
+
+
+section
+	position relative
+	padding 60px 0
+
+
+input,
+select,
+button
+	outline none
+
+
+*, *:before, *:after
+	box-sizing border-box
+
+
+.container
+	width 100%
+	max-width 1170px
+	margin 0 auto
+	position relative
+    
+// Общие стили
+@import '../../static/stylus/common_styles.styl'
+
+
+// МОДУЛИ
+// Стили шапки
+@import '../../static/stylus/modules/header/header.styl'
+
+// Стили футера
+@import '../../static/stylus/modules/footer/footer.styl'
+
+// Стили меню
+@import '../../static/stylus/modules/navigation/main-nav.styl'
+
+//Компоненты
+@import "../../static/stylus/components/components.styl"
+
+
+// СТРАНИЦЫ
+// Стили главной страницы
+@import '../../static/stylus/pages/index.styl'
+
+// Стили главного баннера
+@import '../../static/stylus/section/banner.styl'
+
+// Стили блока о нас
+@import '../../static/stylus/section/about.styl'
+
+// Стили блока Услуги
+@import '../../static/stylus/section/services.styl'
+
+// Стили блока Портфолио
+@import '../../static/stylus/section/portfolio.styl'
+
+// Стили блока Стоимость
+@import '../../static/stylus/section/price.styl'
+
+// Стили блока Команда
+@import '../../static/stylus/section/team.styl'
+
+// Стили блока Партнеры
+@import '../../static/stylus/section/partner.styl'
+
+// Стили блока Отзывы
+@import '../../static/stylus/section/reviews.styl'

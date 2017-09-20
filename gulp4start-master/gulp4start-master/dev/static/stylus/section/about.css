@@ -1,0 +1,22 @@
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-video,
+.about-text {
+  flex-basis: auto;
+  width: 49%;
+}
+.about-text {
+  text-align: center;
+}
+.about-text p {
+  text-align: left;
+  margin-bottom: 25px;
+  color: greenColor;
+  line-height: 1.1;
+}
+.about-video {
+  margin-top: 35px;
+}

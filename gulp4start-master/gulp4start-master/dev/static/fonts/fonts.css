@@ -1,0 +1,13 @@
+@font-face
+    font-family: 'pt_sansregular';
+    src: url('pt_sans_regular-webfont.woff2') format('woff2'),
+         url('pt_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+@font-face 
+    font-family: 'kuraleregular';
+    src: url('kurale-regular-webfont.woff2') format('woff2'),
+         url('kurale-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;

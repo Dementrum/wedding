@@ -1,0 +1,16 @@
+.header-nav__list {
+  z-index: 1;
+  display: none;
+}
+.header-nav__link {
+  display: inline-block;
+  padding: 15px 15px 15px 20px;
+  background-color: #fff;
+  color: greenColor;
+  border-bottom: 1px solid greenColor;
+  transition: all linear 0.1s;
+}
+.header-nav__link:hover {
+  background: greenColor;
+  color: #fff;
+}

@@ -1,0 +1,113 @@
+.sandwich
+	display inline-block
+	vertical-align middle
+	position relative
+	size(50px)
+	margin-right 15px
+	background greenColor
+	border-radius 50%
+	border 2px solid #fff
+	cursor pointer
+	
+	&.active
+		.sandwich--line_top
+			top 21px
+			left 18px
+			width 36px
+			transform: rotate(45deg)
+
+		.sandwich--line_middle
+			top 22px
+			opacity 0
+		.sandwich--line_bottom
+			top 21px
+			left 18px
+			width 36px
+			transform: rotate(-225deg)
+
+
+.sandwich-line 
+	display block
+	position absolute
+	left 50%
+	margin-left -12.5px
+	size(25px, 4px)
+	background #fff
+	transition all 400ms ease-in-out
+
+.sandwich--line_top
+	top 14px
+.sandwich--line_middle
+	top 22px
+	opacity 1
+.sandwich--line_bottom
+	top 30px
+
+.g-btn
+	display inline-block
+	height 50px
+	line-height 48px
+	border 1.3px solid #fff
+	border-radius 50px
+	padding 0 20px
+	color #fff
+	background greenColor
+	transition all linear .4s
+	cursor pointer
+
+		
+	&:hover
+		background-color #fff
+		color greenColor
+		
+	&.g-btn--small
+		height 30px
+		line-height 28px
+
+	&.g-btn--pdf
+		padding-left 45px
+		position relative
+
+		&:before
+			content ''
+			absolute($left: 15px, $top: 13px)
+			display block
+			size(20px)
+			background url('../img/general/download.svg') 0 0 no-repeat
+			background-size 100%
+
+		&:hover
+			border 1px solid greenColor
+
+		&:hover:before
+			content ''
+			background url('../img/general/download-hover.svg') 0 0 no-repeat
+			size(20px)
+			background-size 100%
+
+
+
+.g-section-title
+	margin-bottom: 30px
+	font-size  42px
+	text-align  center
+	font-family  titleFont
+	color greenColor
+
+	&.g-section-title--white
+		color #fff
+
+.instagram-text
+	font-size 24px
+	font-family boldFont
+	color greenColor
+	position relative
+	display inline-block
+	
+	&:before
+		content ''
+		vertical-align middle
+		display inline-block
+		size(35px, 35px)
+		margin -7px 15px 0 0
+		background url(../img/general/instagram.png) 0 0 no-repeat
