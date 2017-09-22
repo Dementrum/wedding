@@ -21,7 +21,8 @@ $(document).ready(function () {
 		speed: 300,
 		slidesToShow: 4,
 		slidesToScroll: 2,
-		
+		prevArrow: '.reviews-slider-prev',
+		nextArrow: '.reviews-slider-next',
 		responsive: [
 			{
 				breakpoint: 1024,
