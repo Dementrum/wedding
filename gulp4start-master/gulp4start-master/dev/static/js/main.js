@@ -18,10 +18,9 @@ $(document).ready(function () {
 	$('.reviews-slider-item'). slick({
 		autoplay: true,
 		autoplaySpeed: 100000,
-		cssEase: 'linear',
 		dots: true,
 		infinite:true,
-		speed: 300,
+		speed: 400,
 		slidesToShow: 4,
 		slidesToScroll: 2,
 		prevArrow: '.reviews-slider-prev',
