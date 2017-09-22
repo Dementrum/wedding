@@ -16,6 +16,9 @@ $(document).ready(function () {
 	})
 
 	$('.reviews-slider-item'). slick({
+		autoplay: true,
+		autoplaySpeed: 100000,
+		cssEase: 'linear',
 		dots: true,
 		infinite:true,
 		speed: 300,
@@ -28,8 +31,8 @@ $(document).ready(function () {
 				breakpoint: 1024,
 				settings: {
 					slidesToShow: 4,
-					slidesToScroll: 3,
-					infinite: true,
+					slidesToScroll: 4,
+					infinite: true
 
 				}
 			},
