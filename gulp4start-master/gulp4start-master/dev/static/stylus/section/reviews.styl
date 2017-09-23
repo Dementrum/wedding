@@ -10,12 +10,28 @@
 		background #fff url('../img/general/wave-preview-bottom.png') -10px -10px no-repeat
 		z-index 1
 
-
-
 .reviews-slider
 	width 1000px
 	margin 0 auto
-	
+	position relative
+
+.reviews-slider__controls
+	position absolute
+	top 50%
+	margin-top -22px
+	size(45px)
+	cursor pointer
+
+
+.reviews-slider-prev
+	left -90px
+	background url('../img/general/left-arrow.svg') 0 0 no-repeat
+	background-size 100%
+
+.reviews-slider-next
+	right -90px
+	background url('../img/general/right-arrow.svg') 0 0 no-repeat
+	background-size 100%
 
 .reviews-item
 	height 305px
@@ -71,11 +87,36 @@
 	margin-bottom 5px
 	font-size 24px
 	font-family boldFont
-	
+
+
+
 .reviews-data 
 	display block	
 	margin-top 10px
 	font-size 20px
+
+.slick-dots
+	bottom -30px
+	li
+		button
+			border 1px solid #fff
+			border-radius 50%
+			&:before
+				display none
+				
+
+		&.slick-active
+			button
+				background-color #fff
+
+
+.slick-dots
+	li
+		.slick-active
+			button:before
+				color #fff
+				opacity 1
+
 
 
 	
