@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 	$('.reviews-slider-item'). slick({
 		autoplay: true,
-		autoplaySpeed: 100000,
+		autoplaySpeed: 700000,
 		dots: true,
 		infinite:true,
 		speed: 400,
