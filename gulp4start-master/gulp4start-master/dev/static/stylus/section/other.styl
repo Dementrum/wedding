@@ -1,3 +1,19 @@
+.other
+  &:after
+    content ''
+    absolute($left:0, $right:0, $top: -15px)
+    display block
+    size(100%, 20px)
+    background url(../img/general/wave-top-other.png)0 0 no-repeat
+
+  &:before
+    content ''
+    absolute($left:0, $right:0, $bottom: -20px)
+    display block
+    size(100%, 20px)
+    background url(../img/general/wave-bottom-other.png)0 -1px no-repeat
+
+
 .other-content
   color greenColor
   .g-section-title
@@ -20,12 +36,46 @@
 
 
 .other-item
+  position relative
   padding-top 180px
   text-align center
-  margin-bottom 60px
+  margin 40px 0 60px 0
   font-family titleFont
   width 30%
   font-size 24px
   line-height 1.2
-  
 
+  &:before
+    content ''
+    absolute($top: 0, $left: 50%)
+    margin-left -82px
+    size(165px)
+
+.other-item--corporate
+  &:before
+    background url('../img/content/other/dance.png') 0 0 no-repeat
+
+.other-item.other-item--birthday
+  &:before
+    background url('../img/content/other/cake.png') 0 0 no-repeat
+
+.other-item.other-item--childholiday
+  &:before
+    background url('../img/content/other/fire.png') 0 0 no-repeat
+
+.other-offer
+  width 100%
+  max-width 675px
+  margin 0 auto
+  text-align center
+  font-size 26px
+  line-height 1.2
+
+  a
+    font-family boldFont
+    color greenColor
+
+.other-arrow
+  size(35px, 55px)
+  background-size 100%
+  margin-top 50px
