@@ -3,19 +3,59 @@ footer
   color #fff
 
   .container
+    width 100%
+    max-width 960px
     display flex
     justify-content space-between
     flex-wrap wrap
     align-items center
     padding 20px 0
+s
+.footer-about
+    color grayColor
+    
+    span 
+        display block
 
-    a
-      color #fff
+.footer-company__name 
+    font-family boldFont
+    text-transform uppercase         
 
 .footer-phone
-  width 200px
+    a
+      position relative
+      padding-left 30px
+      display block
+      color #fff 
+      
+      &:before
+          content ''
+          display block
+          absolute($top:4px, $left:10px)
+          size(15px)
+      
+    &--city 
+        &:before
+            background url(../img/general/phone.svg) 0 0 no-repeat
+            background-size 100%
+      
+    &--mobile 
+        &:before
+            background url(../img/general/mobile.svg) 0 0 no-repeat
+            background-size 100%
+      
+    &--mobile
+        &:before
+            background url(../img/general/mobile.svg) 0 0 no-repeat
+            background-size 100%
 
+              
 .footer-coryright
   width 100%
   text-align center
   color grayColor
+  
+  a
+      color grayColor
+      text-decoration underline
+           
