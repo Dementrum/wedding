@@ -18,7 +18,7 @@ $(document).ready(function () {
     var destination = $(elementClick).offset().top;
     jQuery("html:not(:animated),body:not(:animated)").animate({
       scrollTop: destination
-    }, 700);
+    }, 1500);
     return false;
 	})
 
