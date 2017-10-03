@@ -69,6 +69,7 @@ footer
   margin 10px 0 10px
 
 .footer-coryright
+  position relative
   span:last-child
       margin-left 13px
   
@@ -105,3 +106,13 @@ footer
   &--youtube
     background #fff url('../img/general/youtube.svg') 0 0 no-repeat
     background-size 100%
+
+.footer-home
+  a
+    &:before
+      content ''
+      display inline-block
+      size(18px)
+      absolute($left:43%, $top:25px)
+      background url(../img/general/house-page.svg) 0 0 no-repeat
+      background-size 100%
