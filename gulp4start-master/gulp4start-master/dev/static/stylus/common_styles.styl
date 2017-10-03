@@ -59,15 +59,18 @@
 	&:hover
 		background-color #fff
 		color greenColor
-		
-	&.g-btn--small
+	
+	&--secrets
+		border 1px solid greenColor	
+	
+	&--small
 		height 30px
 		line-height 28px
 
-	&.g-btn--pdf
+	&--pdf
 		padding-left 45px
 		position relative
-
+	
 		&:before
 			content ''
 			absolute($left: 15px, $top: 13px)
