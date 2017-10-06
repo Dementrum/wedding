@@ -1,7 +1,7 @@
 {
   "name": "start",
   "version": "0.6.2",
-  "description": "",
+  "description": "Для запуска шаблона нужно выполнить следующие шаги",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -33,5 +33,6 @@
     "normalize.css": "^7.0.0",
     "owl.carousel": "^2.2.0",
     "svg4everybody": "^2.1.8"
-  }
+  },
+  "keywords": []
 }
