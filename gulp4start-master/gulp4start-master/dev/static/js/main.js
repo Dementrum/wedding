@@ -42,12 +42,14 @@ $(document).ready(function () {
 			
 			// Функция подсветки незаполненных полей
 			function lightEmpty(){
-				form.find('.empty_field').css({'border':'1px solid red'});
+				form.find('.empty_field').css({'border':'1px solid red','font-weight':'bold'
+				   });
 				setTimeout(function(){
 					form.find('.empty_field').removeAttr('style');
 				},500);
 			}
 			
+		
 			setInterval(function(){
 				checkInput();
 				var sizeEmpty = form.find('.empty_field').size();
