@@ -12,7 +12,7 @@ $(document).ready(function () {
 		}else{
 			menu.slideDown();
 		}
-		
+
   $(".scrollto").click(function() {
     var elementClick = $(this).attr("href")
     var destination = $(elementClick).offset().top;
@@ -26,9 +26,9 @@ $(document).ready(function () {
 	$('.form--secrets').each(function(){
 			var form = $(this),
 				btn = form.find('.btn_submit');
-			
+
 			form.find('.g-input').addClass('empty_field');
-			
+
 			// Функция проверки полей формы
 			function checkInput(){
 				form.find('.g-input').each(function(){
@@ -39,7 +39,7 @@ $(document).ready(function () {
 					}
 				});
 			}
-			
+
 			// Функция подсветки незаполненных полей
 			function lightEmpty(){
 				form.find('.empty_field').css({'border':'1px solid red','font-weight':'bold'
@@ -48,8 +48,8 @@ $(document).ready(function () {
 					form.find('.empty_field').removeAttr('style');
 				},500);
 			}
-			
-		
+
+
 			setInterval(function(){
 				checkInput();
 				var sizeEmpty = form.find('.empty_field').size();
@@ -72,10 +72,31 @@ $(document).ready(function () {
 					form.submit();
 				}
 			});
-			
+
+		})
+
+	$("form").on("submit",function(){
+		var formID ='#' + $(this).attr("id")
+		console.log();
+		$(formID).validate({
+			rules: {
+				name: 'required',
+				phone: 'required'
+			},
+			messages: {
+				name: 'Введите корректные данные',
+				phone: 'Введите корректные данные'
+			}
 		});
+		if($(formID).valid()) {
 
+			$(this).hide();
+			$(this).parent().find('success-form').addClass('success-show')
 
+		}
+		return false;
+
+	});
 
   $('.reviews-slider-item'). slick({
 		autoplay: true,
@@ -115,6 +136,41 @@ $(document).ready(function () {
 		]
 	});
 });
+
+
+    $("#form--secrets").validate({
+		rules:{
+
+            name:{
+                required: true,
+                minlength: 2,
+                maxlength: 16,
+            },
+
+            phone:{
+                required: true,
+                minlength: 6,
+                maxlength: 16,
+            },
+       },
+
+       messages:{
+
+            name:{
+                required: "Это поле обязательно для заполнения",
+                minlength: "Введите корректные данные",
+                maxlength: "Максимальное число символов - 16",
+            },
+
+            phone:{
+                required: "Это поле обязательно для заполнения",
+                minlength: "Введите корректные данные",
+                maxlength: "Телефон должен быть минимум 6 цифр",
+            },
+
+       }
+
+    });
 
 
 
