@@ -75,28 +75,7 @@ $(document).ready(function () {
 
 		})
 
-	$("form").on("submit",function(){
-		var formID ='#' + $(this).attr("id")
-		console.log();
-		$(formID).validate({
-			rules: {
-				name: 'required',
-				phone: 'required'
-			},
-			messages: {
-				name: 'Введите корректные данные',
-				phone: 'Введите корректные данные'
-			}
-		});
-		if($(formID).valid()) {
 
-			$(this).hide();
-			$(this).parent().find('success-form').addClass('success-show')
-
-		}
-		return false;
-
-	});
 
   $('.reviews-slider-item'). slick({
 		autoplay: true,
@@ -165,12 +144,21 @@ $(document).ready(function () {
             phone:{
                 required: "Это поле обязательно для заполнения",
                 minlength: "Введите корректные данные",
-                maxlength: "Телефон должен быть минимум 6 цифр",
+                maxlength: "Телефон должен быть максимум 16 цифр",
             },
 
        }
 
     });
+	$("form").on("submit",function(){
+		if($("form").valid()) {
 
+			$("#form--secrets").css({'display':'none'});
+			$(".success-form").css({'display':'block'});
+
+		}
+		return false;
+
+	});
 
 
