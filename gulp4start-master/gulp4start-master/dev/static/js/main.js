@@ -77,7 +77,7 @@ $(document).ready(function () {
 
 
 
-  $('.reviews-slider-item'). slick({
+  $('.reviews-slider-item').slick({
 		autoplay: true,
 		autoplaySpeed: 700000,
 		dots: true,
