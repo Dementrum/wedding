@@ -1,3 +1,4 @@
+'use strict';
 module.exports = function() {
     $.gulp.task('libsJS:dev', () => {
         return $.gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js'])
@@ -23,6 +24,8 @@ module.exports = function() {
                 stream: true
             }));
     });
+
+};
     // Slick-slider
     $.gulp.task('libsJS:dev', () => {
         return $.gulp.src(['node_modules/slick-carousel/slick/slick.min.js'])
@@ -48,6 +51,8 @@ module.exports = function() {
                 stream: true
             }));
     });
+
+
     // Jquery-validator
     $.gulp.task('libsJS:dev', () => {
         return $.gulp.src(['node_modules/jquery-validation/dist/jquery.validate.min.js'])
@@ -73,4 +78,4 @@ module.exports = function() {
                 stream: true
             }));
     });
-};
+
