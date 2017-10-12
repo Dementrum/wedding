@@ -22,8 +22,12 @@ $(document).ready(function () {
     return false;
 	})
 })
-
-	$('.form--secrets').each(function(){
+  
+  $('.popup-link').magnificPopup({
+  	type:'inline'
+});
+	
+	$('#form--feedback').each(function(){
 			var form = $(this),
 				btn = form.find('.btn_submit');
 
@@ -76,6 +80,49 @@ $(document).ready(function () {
 		})
 
 
+    $("#form--feedback").validate({
+		rules:{
+
+            name:{
+                required: true,
+                minlength: 2,
+                maxlength: 16,
+            },
+
+            phone:{
+                required: true,
+                minlength: 6,
+                maxlength: 16,
+            },
+       },
+
+       messages:{
+
+            name:{
+                required: "Это поле обязательно для заполнения",
+                minlength: "Введите корректные данные",
+                maxlength: "Максимальное число символов - 16",
+            },
+
+            phone:{
+                required: "Это поле обязательно для заполнения",
+                minlength: "Введите корректные данные",
+                maxlength: "Телефон должен быть максимум 16 цифр",
+            },
+
+       }
+
+    });
+	$(".form").on("submit",function(){
+		if($("form").valid()) {
+
+			$("#form--feedback").css({'display':'none'});
+			$("#success-form").css({'display':'block'});
+
+		}
+		return false;
+
+	});
 
   $('.reviews-slider-item').slick({
 		autoplay: true,
@@ -117,48 +164,5 @@ $(document).ready(function () {
 });
 
 
-    $("#form--secrets").validate({
-		rules:{
-
-            name:{
-                required: true,
-                minlength: 2,
-                maxlength: 16,
-            },
-
-            phone:{
-                required: true,
-                minlength: 6,
-                maxlength: 16,
-            },
-       },
-
-       messages:{
-
-            name:{
-                required: "Это поле обязательно для заполнения",
-                minlength: "Введите корректные данные",
-                maxlength: "Максимальное число символов - 16",
-            },
-
-            phone:{
-                required: "Это поле обязательно для заполнения",
-                minlength: "Введите корректные данные",
-                maxlength: "Телефон должен быть максимум 16 цифр",
-            },
-
-       }
-
-    });
-	$("form").on("submit",function(){
-		if($("form").valid()) {
-
-			$("#form--secrets").css({'display':'none'});
-			$(".success-form").css({'display':'block'});
-
-		}
-		return false;
-
-	});
 
 
