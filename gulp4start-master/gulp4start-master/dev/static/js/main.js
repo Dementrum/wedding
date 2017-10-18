@@ -27,7 +27,7 @@ $(document).ready(function () {
   	type:'inline'
 });
 	
-	$('#form--feedback').each(function(){
+	$('form').each(function(){
 			var form = $(this),
 				btn = form.find('.btn_submit');
 
@@ -113,7 +113,7 @@ $(document).ready(function () {
        }
 
     });
-	$(".form").on("submit",function(){
+	$("form").on("submit",function(){
 		if($("form").valid()) {
 
 			$("#form--feedback").css({'display':'none'});
