@@ -4,6 +4,8 @@ module.exports = function () {
             .pipe($.gp.stylus({
                 'include css': true
             }))
+            .pipe(plumber())
+            .pipe(stylus({use:[nib()]}))
             .pipe($.gp.autoprefixer({
                 browsers: ['last 3 version']
             }))

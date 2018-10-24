@@ -3,6 +3,8 @@ global.$ = {
         task: require('./gulp/paths/tasks.js')
     },
     gulp: require('gulp'),
+    stylus: require('gulp-stylus'),
+    nib: require('nib'),
     del: require('del'),
     fs: require('fs'),
     browserSync: require('browser-sync').create(),
